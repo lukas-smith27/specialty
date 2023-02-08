@@ -92,7 +92,7 @@ body {
 .links li:hover {
   z-index: 100;
   position: relative;
-  background: rgb(255, 0, 0);
+  background: rgb(220, 62, 50);
 }
 
 .link li ul li:hover {
@@ -314,7 +314,7 @@ body {
 .content-box {
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin: 0 auto;
   position: relative;
   width: 90%;
   height: auto;
@@ -338,7 +338,7 @@ body {
 }
 
 #mission {
-  color: rgb(255, 0, 0);
+  color: rgb(220, 62, 50);
 }
 
 /*////////////////// Team Page ////////////////*/
@@ -412,6 +412,12 @@ body {
 }
 
 /*////////////////// Careers Page ////////////////*/
+.careers {
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+}
+
 .job-header {
   color: rgb(255, 255, 255);
   font-family: sans-serif;
@@ -422,7 +428,20 @@ body {
   color: rgb(255, 255, 255);
   font-family: sans-serif;
   font-size: 20px;
+  display: block;
   padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.job-images {
+  margin: 0 auto;
+  width: 90%
+}
+
+.job-images img {
+  width: 35%;
+  height: 325px;
+  margin: 15px;
 }
 
 
@@ -499,7 +518,7 @@ body {
 
 .form-submit:hover {
   color: rgb(255, 255, 255);
-  background-color: rgb(16, 107, 200);
+  background-color: rgb(220, 62, 50);
   height: 60px;
   width: 100px;
   font-size: 25px;
