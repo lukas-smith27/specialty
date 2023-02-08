@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>B&J Specialty, Inc. | Request A Quote</title>
+        <link rel="stylesheet" href="../public/scss/styles.css" type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Cookie" type="text/css">
+        <script type="text/javascript" src="../public/javascript/jQuery.js" defer></script>
+        <script type="text/javascript" src="../public/javascript/main.js" defer></script>
+    </head>
+    <body>
+        <nav class="navigation-bar">
+            <div class="company">
+                <a class="logo-home"><img src="../public/images/specialty-logo_500x500_transparent.png"></a></div>
+            <a href="#" class="small-menu">
+                <span class="lines"></span>
+                <span class="lines"></span>
+                <span class="lines"></span>
+            </a>
+            <div class="links">   
+                <ul>
+                    <li><a class="homeTop">Home</a></li>
+                    <li><a class="aboutTop">About Us</a>
+                        <ul>
+                            <li><a class="historyTop">History</a></li>
+                            <li><a class="teamTop">Our Team</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="servicesTop">Services</a>
+                        <ul>
+                            <li><a class="five-axisTop">5-Axis Precision Machining</a></li>
+                            <li><a class="three-d-printingTop">3D Metal Printing</a></li>
+                            <li><a class="moldTop">Mold And Die Services</a></li>
+                            <li><a class="engineeringTop">Reverse Engineering</a></li>
+                            <li><a class="weldingTop">Welding Services</a></li>
+                            <li><a class="wire-ramTop">Precision Ram / Wire EDM</a></li>
+                            <li><a class="laserTop">Blue Light / Laser SCanning</a></li>
+                            <li><a class="equipmentTop">Equipment</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="careersTop">Careers</a></li>
+                    <li><a class="quoteTop">Request A Quote</a></li>
+                    <li><a class="contactTop">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content-box">
+            <h1 id="quoteHeader">Request A Quote</h1>
+            <h2 id="quote-instructions">Complete this form and a sales representative will contact you within three (3) business days.</h2>
+
+            <div class="input-section">
+                <form method="post" onsubmit="emailSend(); reset(); return false;">
+                    <input type="text" class="contact-name" placeholder="*Name"><br>
+                    <input type="text" class="contact-company" placeholder="*Company"><br>
+                    <input type="text" class="address" placeholder="*Street"><br>
+                    <input type="text" class="address2" placeholder="Address Line 2"><br>
+                    <div class="input-small">
+                        <input type="text" class="city" placeholder="*City">
+                        <input type="text" class="state" placeholder="*State">
+                        <input type="text" class="zip" placeholder="*Zip / Postal Code">
+                        <input type="text" class="country" placeholder="*Country">
+                    </div>
+                    <input type="text" class="phone" placeholder="*Phone"><br>
+                    <input type="text" class="email" placeholder="*Email"><br>
+                    <input type="text" class="website" placeholder="Company Website"><br>
+                    <input type="text" class="fax" placeholder="Fax Number"><br>
+
+                    <input type="radio" id="five-axis" name="service-choice" value="5-Axis CNC Machining Services"><label for="five-axis">5-Axis CNC Machining Services</label><br>
+                    <input type="radio" id="mold-design" name="service-choice" value="Mold & Die Design & Manufacturing & Repair Services"><label for="mold-design">Mold & Die Design & Manufacturing & Repair Services</label><br>
+                    <input type="radio" id="reverse-eng" name="service-choice" value="Reverse Engineering Services"><label for="reverse-eng">Reverse Engineering Services</label><br>
+                    <input type="radio" id="wire-ram" name="service-choice" value="Wire & Ram EDM Services"><label for="wire-edm">Wire & Ram EDM Services</label><br>
+                    <input type="radio" id="other" name="service-choice" value="Other"><label for="other">Other</label><br>
+
+                    <input type="text" class="additional-info" placeholder="Add any additional information here"><br>
+
+                    <h2 id="quote-instructions">How would you like us to contact you?</h2>
+                    <input type="checkbox" id="phone-contact" name="contact-method" value="Phone"><label for="phone-contact">Phone</label>
+                    <input type="checkbox" id="email-contact" name="contact-method" value="Email"><label for="email-contact">Email</label><br><br>
+
+                    <button class="form-submit" type="submit">Submit</button><br>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <div class="content">
+                <ul class="contacts-location">
+                    <li><a href="tel:+12607615011" class="fa fa-phone">(260) 761-5011</a></li>
+                    <li><a href="https://www.google.com/maps/dir//7919+N+100+E,+Wawaka,+IN+46794/@41.46704,-85.4075547,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x881668f9ca6415b1:0xc1829f44f809c0dc!2m2!1d-85.405366!2d41.467036" class="fa fa-location-arrow" target="_blank">7919 N 100 E, Wawaka, IN 46794</a></li>
+                    <li><a href="mailto:sales@bjspecialtyinc.com" class="fa fa-envelope">sales@bjspecialtyinc.com</a></li>
+                </ul>
+                <ul class="contacts-social">
+                    <li><a href="https://www.facebook.com/bjspecialtyinc/" target="_blank" id="facebookLogo" class="fa fa-facebook"></a></li>
+                    <li><a href="https://youtube.com/playlist?list=PLfT7ZRf4FiJlCIhH47RpnFijEYV_lyd4H" target="_blank" id="youtubeLogo" class="fa fa-youtube-play"></a></li>
+                    <li><a href="https://www.linkedin.com/company/wick-fab-b&j-specialty" target="_blank" id="linkedinLogo" class="fa fa-linkedin-square"></a></li>
+                </ul>
+                <ul class="bandj-family">
+                    <li><a class="international" href="https://www.bjinternationalllc.com/" target="_blank"><img src="../public/images/international-logo-transparent_transparent.png"></a></li>
+                    <li><a class="medical" href="https://www.bjmedicalinc.com/" target="_blank"><img src="../public/images/Medical_Logo_with_symbol-01_500x500-transformed.png"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

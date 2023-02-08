@@ -340,6 +340,264 @@ body {
   color: rgb(255, 0, 0);
 }
 
+/*////////////////// Team Page ////////////////*/
+#teamHeader {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.team-container {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  width: 90%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.team-members {
+  align-items: center;
+  border-radius: 20px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: 10px;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.team-members img {
+  height: 250px;
+  width: 80%;
+}
+
+.team-members h2 {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.team-members p {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.team-members a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+@media (max-width: 950px) {
+  #teamHeader {
+    font-size: 20px;
+  }
+  .content-box > .team-container {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    justify-content: center;
+  }
+}
+/*////////////////// Careers Page ////////////////*/
+.job-header {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 25px;
+}
+
+.job-posting {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+/*////////////////// Quote Page ////////////////*/
+#quoteHeader {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+#quote-instructions {
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.input-section {
+  align-items: center;
+  margin: 0 auto;
+  text-align: center;
+  width: 95%;
+}
+
+.input-section input[type=text] {
+  word-wrap: break-word;
+  font-size: 25px;
+  justify-content: center;
+  width: 80%;
+  margin: 10px 0;
+  height: 35px;
+}
+
+.input-small input[type=text] {
+  width: 38%;
+  margin: 10px 20px;
+}
+
+.input-section input[type=radio] {
+  transform: scale(2);
+  left: 0;
+}
+
+.input-section input[type=checkbox] {
+  transform: scale(2);
+  position: relative;
+}
+
+.input-section label {
+  align-items: center;
+  margin: 0 10px;
+  font-size: 25px;
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+.additional-info {
+  width: 80%;
+  margin: 10px 0;
+  height: auto;
+}
+
+.form-submit {
+  height: 60px;
+  width: 100px;
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  font-family: sans-serif;
+  margin-bottom: 20px;
+}
+
+.form-submit:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(16, 107, 200);
+  height: 60px;
+  width: 100px;
+  font-size: 25px;
+  border: none;
+  border-radius: 10px;
+  font-family: sans-serif;
+}
+
+@media (max-width: 750px) {
+  .input-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+    width: 95%;
+  }
+  .input-section input[type=text] {
+    font-size: 18px;
+  }
+  .input-section label {
+    font-size: 18px;
+  }
+}
+/*////////////////// Contact Page ////////////////*/
+.contact {
+  position: relative;
+}
+
+#contactHeader {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.contact p {
+  text-decoration: none;
+}
+
+.map {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.office-info {
+  display: flex;
+}
+
+.office-location {
+  margin-top: 2%;
+  float: left;
+  width: 49%;
+}
+
+.office-hours {
+  float: left;
+  width: 49%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 300px) {
+  .map iframe {
+    height: 300px;
+    width: 85%;
+    margin-bottom: 20px;
+  }
+  #contactHeader {
+    font-size: 25px;
+  }
+  .office-info {
+    width: 100%;
+  }
+  .office-location {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .office-hours {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .office-hours p, .office-location p {
+    margin: 0 auto;
+    font-size: 14px;
+  }
+}
+@media (max-width: 900px) {
+  .map iframe {
+    height: 300px;
+    width: 85%;
+    margin-bottom: 20px;
+  }
+  .office-info {
+    flex-direction: column;
+  }
+  .office-hours, .office-location {
+    margin: 0 auto;
+  }
+}
 /*////////////////// Page Footers ////////////////*/
 footer {
   justify-content: center;
