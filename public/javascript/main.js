@@ -6,7 +6,7 @@ $(document).ready(function(){
     history.pushState({page: 4}, "http://127.0.0.1:5500/public/five-axis.html")
     history.pushState({page: 5}, "http://127.0.0.1:5500/public/metal-print.html")
     history.pushState({page: 6}, "http://127.0.0.1:5500/public/mold_design.html")
-    history.pushState({page: 7}, "http://127.0.0.1:5500/public/reverse.html")
+    history.pushState({page: 7}, "http://127.0.0.1:5500/public/reverse_engineering.html")
     history.pushState({page: 8}, "http://127.0.0.1:5500/public/careers.html")
     history.pushState({page: 9}, "http://127.0.0.1:5500/public/quote.html")
     history.pushState({page: 10}, "http://127.0.0.1:5500/public/contact.html")
@@ -49,7 +49,7 @@ $(document).ready(function(){
     })
 
     $(".engineeringTop").click(function(){
-        url = "http://127.0.0.1:5500/public/reverse.html"
+        url = "http://127.0.0.1:5500/public/reverse_engineering.html"
         window.location.replace(url)
     })
 
