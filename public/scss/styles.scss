@@ -220,6 +220,7 @@ body {
 }
 
 .home-video iframe {
+  padding-top: 20px;
   margin: 0 auto;
 }
 
@@ -233,6 +234,7 @@ body {
   text-align: center;
   font-family: sans-serif;
   color: rgb(255, 255, 255);
+  padding-bottom: 20px;
 }
 
 .certs-and-reviews {
@@ -331,6 +333,8 @@ body {
 }
 
 .content-box p {
+  margin: 0 auto;
+  width: 75%;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 0px;
@@ -492,6 +496,7 @@ body {
 
 .five-axis-images img:hover {
   transform: scale(1.5);
+  transition: .75s;
   z-index: 2;
 }
 
@@ -587,6 +592,213 @@ body {
     height: 125px;
   }
   .five-axis-images img:hover {
+    position: relative;
+    transform: scale(2);
+    transition: .75s;
+  }
+}
+
+/*////////////////// 3D Printing Page ////////////////*/
+#threeD-header {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.threeD-info {
+  padding-bottom: 20px;
+  font-size: 1;
+  margin: 0 auto;
+}
+
+.threeD-images {
+  margin: auto auto;
+  width: 85%;
+}
+
+.threeD-images iframe {
+  position: relative;
+  padding-top: 20px;
+}
+
+/*////////////////// Mold-Die Page ////////////////*/
+#mold-header {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.service-tables {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.arrow, .down, .up {
+  display: none;
+}
+
+.mold-table {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 45%;
+  float: left;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.mold-table tr{
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mold-table th{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.mold-table td{
+  border: 1px solid rgb(255, 255, 255);
+  text-align: left;
+  width: 800px;
+  height: 50px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+#no-border {
+  border: none;
+}
+
+#machine-details {
+  color: rgb(220, 62, 50);
+}
+
+.mold-images {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  z-index: 3;
+}
+
+.mold-images img {
+  padding: 10px;
+  margin: 0 auto;
+  width: 330px;
+  height: 300px;
+}
+
+.mold-images img:hover {
+  transform: scale(1.5);
+  transition: .75s;
+  z-index: 2;
+}
+
+@media (max-width: 1100px) {
+  .table-and-images {
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .service-tables {
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  .arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .up {
+    transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+  }
+  .mold-table {
+    display: inline-table;
+    padding-bottom: 20px;
+    width: 85%;
+  }
+  .mold-table td {
+    font-size: 13px;
+  }
+  .mold-images {
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .mold-images img {
+    width: 100px;
+    height: 100px;
+  }
+  .mold-images img:hover {
+    position: relative;
+    transform: scale(2);
+    transition: .75s;
+  }
+}
+
+@media (max-width: 1450px) {
+  .table-and-images {
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .service-tables {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .up {
+    transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+  }
+  .mold-table {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 85%;
+  }
+  .mold-table td {
+    font-size: 13px;
+  }
+  .mold-images {
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .mold-images img {
+    width: 125px;
+    height: 125px;
+  }
+  .mold-images img:hover {
     position: relative;
     transform: scale(2);
     transition: .75s;

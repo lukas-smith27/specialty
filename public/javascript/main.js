@@ -4,8 +4,8 @@ $(document).ready(function(){
     history.pushState({page: 2}, "http://127.0.0.1:5500/public/history.html")
     history.pushState({page: 3}, "http://127.0.0.1:5500/public/team.html")
     history.pushState({page: 4}, "http://127.0.0.1:5500/public/five-axis.html")
-    history.pushState({page: 5}, "http://127.0.0.1:5500/public/applications.html")
-    history.pushState({page: 6}, "http://127.0.0.1:5500/public/portfolio.html")
+    history.pushState({page: 5}, "http://127.0.0.1:5500/public/metal-print.html")
+    history.pushState({page: 6}, "http://127.0.0.1:5500/public/mold_design.html")
     history.pushState({page: 7}, "http://127.0.0.1:5500/public/careers.html")
     history.pushState({page: 8}, "http://127.0.0.1:5500/public/quote.html")
     history.pushState({page: 9}, "http://127.0.0.1:5500/public/contact.html")
@@ -37,13 +37,13 @@ $(document).ready(function(){
         window.location.replace(url)
     })
 
-    $(".applicationsTop").click(function(){
-        url = "http://127.0.0.1:5500/public/applications.html"
+    $(".three-d-printingTop").click(function(){
+        url = "http://127.0.0.1:5500/public/metal-print.html"
         window.location.replace(url)
     })
 
-    $(".portfolioTop").click(function(){
-        url = "http://127.0.0.1:5500/public/portfolio.html"
+    $(".moldTop").click(function(){
+        url = "http://127.0.0.1:5500/public/mold_design.html"
         window.location.replace(url)
     })
 
