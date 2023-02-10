@@ -3,7 +3,7 @@ $(document).ready(function(){
     history.pushState({page: 1}, "http://127.0.0.1:5500/public/home.html")
     history.pushState({page: 2}, "http://127.0.0.1:5500/public/history.html")
     history.pushState({page: 3}, "http://127.0.0.1:5500/public/team.html")
-    history.pushState({page: 4}, "http://127.0.0.1:5500/public/molds.html")
+    history.pushState({page: 4}, "http://127.0.0.1:5500/public/five-axis.html")
     history.pushState({page: 5}, "http://127.0.0.1:5500/public/applications.html")
     history.pushState({page: 6}, "http://127.0.0.1:5500/public/portfolio.html")
     history.pushState({page: 7}, "http://127.0.0.1:5500/public/careers.html")
@@ -32,8 +32,8 @@ $(document).ready(function(){
         window.location.replace(url)
     })
 
-    $(".moldsTop").click(function(){
-        url = "http://127.0.0.1:5500/public/molds.html"
+    $(".five-axisTop").click(function(){
+        url = "http://127.0.0.1:5500/public/five-axis.html"
         window.location.replace(url)
     })
 
@@ -86,76 +86,6 @@ $(document).ready(function(){
         $(".links").removeClass("active")
     })
 
-    //Open and close specific part modals
-    $(".electrical-modal").hide()
-    $(".actuator-modal").hide()
-    $(".cap-modal").hide()
-    $(".bracket-modal").hide()
-    $(".household-modal").hide()
-    $(".cap-machine-modal").hide()
-    $(".metal-stamp-modal").hide()
-
-    $(".part-cards-electrical").click(function(){
-        $(".electrical-modal").show()
-        $(".close-button").addClass("active")
-    })
-    $(".close-button").click(function(){
-        $(".electrical-modal").hide()
-        $(".close-button").removeClass("active")
-    })
-
-    $(".part-cards-actuator").click(function(){
-        $(".actuator-modal").show()
-        $(".close-button").addClass("active")
-    })
-    $(".close-button").click(function(){
-        $(".actuator-modal").hide()
-        $(".close-button").removeClass("active")
-    })
-
-    $(".part-cards-cap").click(function(){
-        $(".cap-modal").show()
-        $(".close-button").addClass("active")
-    })
-    $(".close-button").click(function(){
-        $(".cap-modal").hide()
-        $(".close-button").removeClass("active")
-    })
-
-    $(".part-cards-bracket").click(function(){
-        $(".bracket-modal").show()
-        $(".close-button").addClass("active")
-    })
-    $(".close-button").click(function(){
-        $(".bracket-modal").hide()
-        $(".close-button").removeClass("active")
-    })
-
-    $(".part-cards-household").click(function(){
-        $(".household-modal").show()
-        $(".close-button").addClass("active")
-    })
-    $(".close-button").click(function(){
-        $(".household-modal").hide()
-        $(".close-button").removeClass("active")
-    })
-
-    $(".cap-machine").click(function(){
-        $(".cap-machine-modal").show()
-        $(".close-button").addClass("active")
-    })
-    $(".close-button").click(function(){
-        $(".cap-machine-modal").hide()
-        $(".close-button").removeClass("active")
-    })
-
-    $(".metal-stamp-app").click(function(){
-        $(".metal-stamp-modal").show()
-        $(".close-button").addClass("active")
-    })
-    $(".close-button").click(function(){
-        $(".metal-stamp-modal").hide()
-        $(".close-button").removeClass("active")
-    })
+    // Show and hide information tables
 })
 
