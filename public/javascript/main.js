@@ -9,9 +9,10 @@ $(document).ready(function(){
     history.pushState({page: 7}, "http://127.0.0.1:5500/public/reverse_engineering.html")
     history.pushState({page: 8}, "http://127.0.0.1:5500/public/welding.html")
     history.pushState({page: 9}, "http://127.0.0.1:5500/public/ram.html")
-    history.pushState({page: 10}, "http://127.0.0.1:5500/public/careers.html")
-    history.pushState({page: 11}, "http://127.0.0.1:5500/public/quote.html")
-    history.pushState({page: 12}, "http://127.0.0.1:5500/public/contact.html")
+    history.pushState({page: 10}, "http://127.0.0.1:5500/public/scanning.html")
+    history.pushState({page: 11}, "http://127.0.0.1:5500/public/careers.html")
+    history.pushState({page: 12}, "http://127.0.0.1:5500/public/quote.html")
+    history.pushState({page: 13}, "http://127.0.0.1:5500/public/contact.html")
 
     $(window).load("http://127.0.0.1:5500/public/home.html")
 
@@ -62,6 +63,11 @@ $(document).ready(function(){
 
     $(".wire-ramTop").click(function(){
         url = "http://127.0.0.1:5500/public/ram.html"
+        window.location.replace(url)
+    })
+
+    $(".laserTop").click(function(){
+        url = "http://127.0.0.1:5500/public/scanning.html"
         window.location.replace(url)
     })
 
