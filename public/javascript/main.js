@@ -1,88 +1,94 @@
 $(document).ready(function(){
 
-    history.pushState({page: 1}, "http://127.0.0.1:5500/public/home.html")
-    history.pushState({page: 2}, "http://127.0.0.1:5500/public/history.html")
-    history.pushState({page: 3}, "http://127.0.0.1:5500/public/team.html")
-    history.pushState({page: 4}, "http://127.0.0.1:5500/public/five-axis.html")
-    history.pushState({page: 5}, "http://127.0.0.1:5500/public/metal-print.html")
-    history.pushState({page: 6}, "http://127.0.0.1:5500/public/mold_design.html")
-    history.pushState({page: 7}, "http://127.0.0.1:5500/public/reverse_engineering.html")
-    history.pushState({page: 8}, "http://127.0.0.1:5500/public/welding.html")
-    history.pushState({page: 9}, "http://127.0.0.1:5500/public/ram.html")
-    history.pushState({page: 10}, "http://127.0.0.1:5500/public/scanning.html")
-    history.pushState({page: 11}, "http://127.0.0.1:5500/public/careers.html")
-    history.pushState({page: 12}, "http://127.0.0.1:5500/public/quote.html")
-    history.pushState({page: 13}, "http://127.0.0.1:5500/public/contact.html")
+    history.pushState({page: 1}, "../public/home.html")
+    history.pushState({page: 2}, "../public/history.html")
+    history.pushState({page: 3}, "../public/team.html")
+    history.pushState({page: 4}, "../public/five-axis.html")
+    history.pushState({page: 5}, "../public/metal-print.html")
+    history.pushState({page: 6}, "../public/mold_design.html")
+    history.pushState({page: 7}, "../public/reverse_engineering.html")
+    history.pushState({page: 8}, "../public/welding.html")
+    history.pushState({page: 9}, "../public/ram.html")
+    history.pushState({page: 10}, "../public/scanning.html")
+    history.pushState({page: 11}, "../public/machines.html")
+    history.pushState({page: 12}, "../public/careers.html")
+    history.pushState({page: 13}, "../public/quote.html")
+    history.pushState({page: 14}, "../public/contact.html")
 
-    $(window).load("http://127.0.0.1:5500/public/home.html")
+    $(window).load("../public/home.html")
 
     $(".logo-home").click(function(){
-        url = "http://127.0.0.1:5500/public/home.html"
+        url = "../public/home.html"
         window.location.replace(url)
     })
 
     $(".homeTop").click(function(){
-        url = "http://127.0.0.1:5500/public/home.html"
+        url = "../public/home.html"
         window.location.replace(url)
     })
 
     $(".historyTop").click(function(){
-        url = "http://127.0.0.1:5500/public/history.html"
+        url = "../public/history.html"
         window.location.replace(url)
     })
 
     $(".teamTop").click(function(){
-        url = "http://127.0.0.1:5500/public/team.html"
+        url = "../public/team.html"
         window.location.replace(url)
     })
 
     $(".five-axisTop").click(function(){
-        url = "http://127.0.0.1:5500/public/five-axis.html"
+        url = "../public/five-axis.html"
         window.location.replace(url)
     })
 
     $(".three-d-printingTop").click(function(){
-        url = "http://127.0.0.1:5500/public/metal-print.html"
+        url = "../public/metal-print.html"
         window.location.replace(url)
     })
 
     $(".moldTop").click(function(){
-        url = "http://127.0.0.1:5500/public/mold_design.html"
+        url = "../public/mold_design.html"
         window.location.replace(url)
     })
 
     $(".engineeringTop").click(function(){
-        url = "http://127.0.0.1:5500/public/reverse_engineering.html"
+        url = "../public/reverse_engineering.html"
         window.location.replace(url)
     })
 
     $(".weldingTop").click(function(){
-        url = "http://127.0.0.1:5500/public/welding.html"
+        url = "../public/welding.html"
         window.location.replace(url)
     })
 
     $(".wire-ramTop").click(function(){
-        url = "http://127.0.0.1:5500/public/ram.html"
+        url = "../public/ram.html"
         window.location.replace(url)
     })
 
     $(".laserTop").click(function(){
-        url = "http://127.0.0.1:5500/public/scanning.html"
+        url = "../public/scanning.html"
+        window.location.replace(url)
+    })
+
+    $(".equipmentTop").click(function(){
+        url = "../public/machines.html"
         window.location.replace(url)
     })
 
     $(".careersTop").click(function(){
-        url = "http://127.0.0.1:5500/public/careers.html"
+        url = "../public/careers.html"
         window.location.replace(url)
     })
 
     $(".quoteTop").click(function(){
-        url = "http://127.0.0.1:5500/public/quote.html"
+        url = "../public/quote.html"
         window.location.replace(url)
     })
 
     $(".contactTop").click(function(){
-        url = "http://127.0.0.1:5500/public/contact.html"
+        url = "../public/contact.html"
         window.location.replace(url)
     })
 
