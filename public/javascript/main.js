@@ -10,7 +10,7 @@ $(document).ready(function(){
     history.pushState({page: 8}, "../public/welding.html")
     history.pushState({page: 9}, "../public/ram.html")
     history.pushState({page: 10}, "../public/scanning.html")
-    history.pushState({page: 11}, "../public/machines.html")
+    history.pushState({page: 11}, "../public/equipment.html")
     history.pushState({page: 12}, "../public/careers.html")
     history.pushState({page: 13}, "../public/quote.html")
     history.pushState({page: 14}, "../public/contact.html")
@@ -73,7 +73,7 @@ $(document).ready(function(){
     })
 
     $(".equipmentTop").click(function(){
-        url = "../public/machines.html"
+        url = "../public/equipment.html"
         window.location.replace(url)
     })
 
