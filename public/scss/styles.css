@@ -345,6 +345,7 @@ body {
 
 #mission {
   color: rgb(220, 62, 50);
+  text-align: center;
 }
 
 /*////////////////// Team Page ////////////////*/
@@ -398,12 +399,14 @@ body {
 .team-members p {
   color: rgb(255, 255, 255);
   font-family: sans-serif;
+  text-align: center;
 }
 
 .team-members a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 20px;
+  text-align: center;
 }
 
 @media (max-width: 950px) {
@@ -990,6 +993,319 @@ body {
     height: 125px;
   }
   .engineering-images img:hover {
+    position: relative;
+    transform: scale(2);
+    transition: 0.75s;
+  }
+}
+/*////////////////// Welding Page ////////////////*/
+#welding-header {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.service-tables {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.arrow, .down, .up {
+  display: none;
+}
+
+.welding-images {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  z-index: 3;
+}
+
+.welding-images figure {
+  display: inline-block;
+}
+
+.welding-images figure figcaption {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.welding-images img {
+  padding: 10px;
+  margin: 0 auto;
+  width: 330px;
+  height: 300px;
+}
+
+.welding-images img:hover {
+  transform: scale(1.5);
+  transition: 0.75s;
+  z-index: 2;
+}
+
+@media (max-width: 1100px) {
+  .table-and-images {
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .up {
+    transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+  }
+  .welding-images {
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .welding-images img {
+    width: 200px;
+    height: 200px;
+  }
+  .welding-images img:hover {
+    position: relative;
+    transform: scale(2);
+    transition: 0.75s;
+  }
+  .welding-images iframe {
+    width: 85%;
+  }
+}
+@media (max-width: 1450px) {
+  .table-and-images {
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .up {
+    transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+  }
+  .welding-images {
+    padding-top: 20px;
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .welding-images img {
+    width: 200px;
+    height: 200px;
+  }
+  .welding-images img:hover {
+    position: relative;
+    transform: scale(2);
+    transition: 0.75s;
+  }
+  .welding-images iframe {
+    width: 85%;
+  }
+}
+/*////////////////// Ram EDM Page ////////////////*/
+#ram-header {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.service-tables {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.arrow, .down, .up {
+  display: none;
+}
+
+.ram-table {
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 45%;
+  float: left;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+
+.ram-table tr {
+  margin: 0 auto;
+  width: 100%;
+}
+
+.ram-table th {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.ram-table td {
+  border: 1px solid rgb(255, 255, 255);
+  text-align: left;
+  width: 800px;
+  height: 50px;
+  padding: 10px;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+#no-border {
+  border: none;
+}
+
+#machine-details {
+  color: rgb(220, 62, 50);
+}
+
+.ram-images {
+  position: relative;
+  display: block;
+  float: left;
+  width: 100%;
+  z-index: 3;
+}
+
+.ram-images figure {
+  display: inline-block;
+}
+
+.ram-images figure figcaption {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+.ram-images img {
+  padding: 10px;
+  margin: 0 auto;
+  width: 330px;
+  height: 300px;
+}
+
+.ram-images img:hover {
+  transform: scale(1.5);
+  transition: 0.75s;
+  z-index: 2;
+}
+
+@media (max-width: 1100px) {
+  .table-and-images {
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .service-tables {
+    margin: auto;
+    text-align: center;
+    flex-direction: column;
+    width: 90%;
+  }
+  .arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .up {
+    transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+  }
+  .ram-table {
+    display: inline-table;
+    padding-bottom: 20px;
+    width: 85%;
+  }
+  .ram-table td {
+    font-size: 13px;
+  }
+  .ram-images {
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .ram-images img {
+    width: 200px;
+    height: 200px;
+  }
+  .ram-images img:hover {
+    position: relative;
+    transform: scale(2);
+    transition: 0.75s;
+  }
+}
+@media (max-width: 1450px) {
+  .table-and-images {
+    margin: 0 auto;
+    flex-direction: column;
+    height: auto;
+  }
+  .service-tables {
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .arrow {
+    border: solid rgb(255, 255, 255);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 5px;
+  }
+  .up {
+    transform: rotate(-135deg);
+  }
+  .down {
+    transform: rotate(45deg);
+  }
+  .ram-table {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 85%;
+  }
+  .ram-table td {
+    font-size: 13px;
+  }
+  .ram-images {
+    margin: 0 auto;
+    vertical-align: middle;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .ram-images img {
+    width: 200px;
+    height: 200px;
+  }
+  .ram-images img:hover {
     position: relative;
     transform: scale(2);
     transition: 0.75s;
