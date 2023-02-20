@@ -1693,16 +1693,20 @@ body {
 }
 
 .office-info {
+  margin: 0 auto;
+  width: 50%;
   display: flex;
 }
 
 .office-location {
+  margin: 0 auto;
   margin-top: 2%;
   float: left;
   width: 49%;
 }
 
 .office-hours {
+  margin: 0 auto;
   float: left;
   width: 49%;
   margin-bottom: 10px;
