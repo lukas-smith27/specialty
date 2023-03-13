@@ -1554,7 +1554,18 @@ body {
 
 .input-section input[type=radio] {
   transform: scale(2);
-  left: 0;
+}
+
+.radios {
+  display: inline-flexbox;
+  flex-direction: row;
+  margin: 0 auto;
+  width: 80%;
+  justify-content: left;
+}
+
+.radios label {
+  vertical-align: middle;
 }
 
 .input-section input[type=checkbox] {
