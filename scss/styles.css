@@ -1559,7 +1559,7 @@ body {
   height: auto;
 }
 
-.formSubmit {
+.submit {
   height: 60px;
   width: 100px;
   font-size: 25px;
@@ -1569,7 +1569,7 @@ body {
   margin-bottom: 20px;
 }
 
-.formSubmit:hover {
+.submit:hover {
   color: rgb(255, 255, 255);
   background-color: rgb(220, 62, 50);
   height: 60px;
