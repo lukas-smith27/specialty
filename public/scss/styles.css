@@ -1608,11 +1608,12 @@ body {
 
 #emailButton {
   color: rgb(255, 255, 255);
-  font-size: 20px;
+  font-size: 27px;
   font-family: sans-serif;
   margin: 0 auto;
-  width: 8%;
-  height: 20%;
+  padding: 5px;
+  width: auto;
+  height: auto;
   border-radius: 5px;
   border: none;
   background-color: rgb(220, 62, 50);
@@ -1653,7 +1654,7 @@ body {
     width: 95%;
   }
   #emailButton {
-    width: 15%;
+    width: auto;
   }
 }
 /*////////////////// Contact Page ////////////////*/
