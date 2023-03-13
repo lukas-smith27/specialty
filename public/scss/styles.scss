@@ -177,7 +177,7 @@ body {
   position: fixed;
   width: 75%;
   height: 75%;
-  filter: brightness(25%);
+  filter: brightness(20%);
 }
 
 #homeHeader {
@@ -555,6 +555,7 @@ body {
 
 #machine-details {
   color: rgb(220, 62, 50);
+  filter: brightness(120%);
 }
 
 .five-axis-images {
@@ -762,10 +763,6 @@ body {
   border: none;
 }
 
-#machine-details {
-  color: rgb(220, 62, 50);
-}
-
 .mold-images {
   position: relative;
   display: block;
@@ -950,10 +947,6 @@ body {
 
 #no-border {
   border: none;
-}
-
-#machine-details {
-  color: rgb(220, 62, 50);
 }
 
 .engineering-images {
@@ -1270,10 +1263,6 @@ body {
 
 #no-border {
   border: none;
-}
-
-#machine-details {
-  color: rgb(220, 62, 50);
 }
 
 .ram-images {
@@ -1683,10 +1672,6 @@ body {
 
 
 /*////////////////// Contact Page ////////////////*/
-.contact {
-  position: relative;
-}
-
 #contactHeader {
   position: relative;
   z-index: 1;
@@ -1694,10 +1679,6 @@ body {
   text-align: center;
   color: rgb(255, 255, 255);
   font-family: sans-serif;
-}
-
-.contact p {
-  text-decoration: none;
 }
 
 .map {
