@@ -1531,7 +1531,7 @@ body {
 }
 
 .input-small input[type=text] {
-  width: 38%;
+  width: 38.65%;
   margin: 10px 20px;
 }
 
@@ -1556,7 +1556,8 @@ body {
 .additionalInfo {
   width: 80%;
   margin: 10px 0;
-  height: auto;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 .submit {
@@ -1624,7 +1625,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .input-section {
     align-items: center;
     display: flex;
@@ -1638,6 +1639,10 @@ body {
   }
   .input-section label {
     font-size: 18px;
+  }
+  .input-small input[type=text] {
+    width: 35%;
+    margin: 10px 20px;
   }
   .input-section-test {
     align-items: center;
