@@ -11,6 +11,7 @@
         <script type="text/javascript" src="./javascript/jQuery.js" defer></script>
         <script type="text/javascript" src="./javascript/main.js" defer></script>
     </head>
+
     <body>
         <div class="home-background">
             <img src="./images/specialty_background.png">
@@ -57,7 +58,7 @@
             <h2 id="quote-instructions">Complete this form and a sales representative will contact you within three (3) business days.</h2>
 
             <div class="input-section">
-                <form action="mailto:sales@bjspecialtyinc.com" method="get" enctype="text/plain">
+                <form accept-charset="UTF-8" action="https://www.formbackend.com/f/a61184926dbafe9a" method="POST">
                     <input type="text" name="name" class="contact-name" placeholder="*Name" required><br>
                     <input type="text" name="company" class="contact-company" placeholder="*Company" required><br>
                     <input type="text" name="address" class="address" placeholder="*Street" required><br>
@@ -74,10 +75,9 @@
                     <input type="text" name="fax" class="fax" placeholder="Fax Number"><br>
 
                     <div class="radios">
-                        <input type="radio" id="fiveAxis" name="serviceChoice" value="5-Axis CNC Machining Services"><label for="fiveAxis">5-Axis CNC Machining Services</label><br>
-                        <input type="radio" id="moldDesign" name="serviceChoice" value="Mold & Die Design & Manufacturing & Repair Services"><label for="moldDesign">Mold & Die Design & Manufacturing & Repair Services</label><br>
-                        <input type="radio" id="reverseEng" name="serviceChoice" value="Reverse Engineering Services"><label for="reverseEng">Reverse Engineering Services</label><br>
-                        <input type="radio" id="wireRam" name="serviceChoice" value="Wire & Ram EDM Services"><label for="wireRam">Wire & Ram EDM Services</label><br>
+                        <input type="radio" id="dieDesign" name="serviceChoice" value="Die Repair & Design Services"><label for="dieDesign">Die Repair & Design Services</label><br>
+                        <input type="radio" id="moldDesign" name="serviceChoice" value="Mold Repair & Design Services"><label for="moldDesign">Mold Repair & Design Services</label><br>
+                        <input type="radio" id="reverseEng" name="serviceChoice" value="Scanning / Reverse Engineering Services"><label for="reverseEng">Scanning / Reverse Engineering Services</label><br>
                         <input type="radio" id="other" name="serviceChoice" value="Other"><label for="other">Other</label><br>
                     </div>
 
