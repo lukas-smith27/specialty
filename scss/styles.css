@@ -561,15 +561,8 @@ body {
 .five-axis-images img {
   padding: 10px;
   margin: 0 auto;
-  width: 330px;
-  height: 300px;
-  border-radius: 10px;
-}
-
-.five-axis-images img:hover {
-  transform: scale(1.5);
-  transition: 0.75s;
-  z-index: 2;
+  width: 350px;
+  height: 325px;
   border-radius: 10px;
 }
 
@@ -603,11 +596,6 @@ body {
     width: 100px;
     height: 100px;
   }
-  .five-axis-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
-  }
 }
 @media (max-width: 1450px) {
   .table-and-images {
@@ -638,11 +626,6 @@ body {
   .five-axis-images img {
     width: 125px;
     height: 125px;
-  }
-  .five-axis-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
   }
 }
 /*////////////////// 3D Printing Page ////////////////*/
@@ -727,33 +710,55 @@ body {
 
 .mold-images {
   position: relative;
-  display: block;
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   z-index: 3;
+  justify-content: center;
 }
 
-.mold-images figure {
-  display: inline-block;
-}
-
-.mold-images figure figcaption {
-  color: rgb(255, 255, 255);
-  font-family: sans-serif;
-}
-
-.mold-images img {
-  padding: 10px;
+.moldImage {
   margin: 0 auto;
-  width: 330px;
-  height: 300px;
+  position: relative;
+  width: 30%;
+  justify-content: center;
+}
+
+.moldImage img {
+  margin: 0 auto;
+  width: 100%;
+  height: 320px;
   border-radius: 10px;
 }
 
-.mold-images img:hover {
-  transform: scale(1.5);
-  transition: 0.75s;
-  z-index: 2;
+.moldDescription {
+  display: table;
+  height: 320px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.85);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.moldDescription p {
+  text-align: center;
+  font-family: sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+.moldImage:hover .moldDescription {
+  visibility: visible;
+  transition: 0.3s;
+  opacity: 1;
 }
 
 @media (max-width: 1100px) {
@@ -777,55 +782,33 @@ body {
     font-size: 13px;
   }
   .mold-images {
+    flex-wrap: wrap;
     margin: 0 auto;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
-  .mold-images img {
-    width: 100px;
-    height: 100px;
+  .moldImage img {
+    width: 100%;
+    height: 250px;
   }
-  .mold-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
-  }
-}
-@media (max-width: 1450px) {
-  .table-and-images {
-    margin: 0 auto;
-    flex-direction: column;
-    height: auto;
-  }
-  .service-tables {
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+  .moldDescription {
+    position: absolute;
+    height: 250px;
     width: 100%;
   }
-  .mold-table {
-    margin: 0 auto;
-    padding-bottom: 20px;
-    width: 85%;
-  }
-  .mold-table td {
-    font-size: 13px;
-  }
+}
+@media (max-width: 800px) {
   .mold-images {
-    margin: 0 auto;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .mold-images img {
-    width: 125px;
-    height: 125px;
-  }
-  .mold-images img:hover {
     position: relative;
-    transform: scale(1);
-    transition: 0.75s;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .moldImage {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+  .moldImage img {
+    display: block;
+    text-align: center;
   }
 }
 /*////////////////// Reverse Engineering Page ////////////////*/
@@ -883,33 +866,55 @@ body {
 
 .engineering-images {
   position: relative;
-  display: block;
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   z-index: 3;
+  justify-content: center;
 }
 
-.engineering-images figure {
-  display: inline-block;
+.reImage {
+  margin: 20px;
+  position: relative;
+  width: 20%;
 }
 
-.engineering-images figure figcaption {
-  color: rgb(255, 255, 255);
-  font-family: sans-serif;
-}
-
-.engineering-images img {
-  padding: 10px;
+.reImage img {
+  position: relative;
   margin: 0 auto;
-  width: 330px;
-  height: 300px;
+  width: 100%;
+  height: 320px;
   border-radius: 10px;
 }
 
-.engineering-images img:hover {
-  transform: scale(1.5);
-  transition: 0.75s;
-  z-index: 2;
+.engineeringDesc {
+  display: table;
+  height: 320px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.85);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.engineeringDesc p {
+  text-align: center;
+  font-family: sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+.reImage:hover .engineeringDesc {
+  visibility: visible;
+  transition: 0.3s;
+  opacity: 1;
 }
 
 @media (max-width: 1100px) {
@@ -924,7 +929,7 @@ body {
     flex-direction: column;
     width: 90%;
   }
-  .mold-table {
+  .engineering-table {
     display: inline-table;
     padding-bottom: 20px;
     width: 85%;
@@ -933,55 +938,22 @@ body {
     font-size: 13px;
   }
   .engineering-images {
-    margin: 0 auto;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .engineering-images img {
-    width: 100px;
-    height: 100px;
-  }
-  .engineering-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
-  }
-}
-@media (max-width: 1450px) {
-  .table-and-images {
-    margin: 0 auto;
-    flex-direction: column;
-    height: auto;
-  }
-  .service-tables {
-    justify-content: center;
     flex-direction: column;
     margin: 0 auto;
+  }
+  .reImage {
+    margin: 0 auto;
+    width: 50%;
+  }
+  .reImage img {
     width: 100%;
+    height: 225px;
   }
-  .engineering-table {
-    margin: 0 auto;
-    padding-bottom: 20px;
-    width: 85%;
+  .engineeringDesc {
+    height: 225px;
   }
-  .engineering-table td {
-    font-size: 13px;
-  }
-  .engineering-images {
-    margin: 0 auto;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .engineering-images img {
-    width: 125px;
-    height: 125px;
-  }
-  .engineering-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
+  .engineeringDesc p {
+    font-size: 1em;
   }
 }
 /*////////////////// Welding Page ////////////////*/
@@ -1001,35 +973,61 @@ body {
   flex-wrap: wrap;
 }
 
+.weldVideo {
+  width: 100%;
+}
+
 .welding-images {
   position: relative;
-  display: block;
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   z-index: 3;
+  justify-content: center;
 }
 
-.welding-images figure {
-  display: inline-block;
+.weldImg {
+  margin: 20px;
+  position: relative;
+  width: 18%;
 }
 
-.welding-images figure figcaption {
-  color: rgb(255, 255, 255);
-  font-family: sans-serif;
-}
-
-.welding-images img {
-  padding: 10px;
+.weldImg img {
+  position: relative;
   margin: 0 auto;
-  width: 330px;
-  height: 300px;
+  width: 100%;
+  height: 275px;
   border-radius: 10px;
 }
 
-.welding-images img:hover {
-  transform: scale(1.5);
-  transition: 0.75s;
-  z-index: 2;
+.weldDesc {
+  display: table;
+  height: 275px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.85);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.weldDesc p {
+  text-align: center;
+  font-family: sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+.weldImg:hover .weldDesc {
+  visibility: visible;
+  transition: 0.3s;
+  opacity: 1;
 }
 
 @media (max-width: 1100px) {
@@ -1038,49 +1036,30 @@ body {
     flex-direction: column;
     height: auto;
   }
-  .welding-images {
-    margin: 0 auto;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .weldVideo {
+    width: 100%;
   }
-  .welding-images img {
-    width: 200px;
-    height: 200px;
-  }
-  .welding-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
-  }
-  .welding-images iframe {
-    width: 85%;
-  }
-}
-@media (max-width: 1450px) {
-  .table-and-images {
-    margin: 0 auto;
-    flex-direction: column;
-    height: auto;
+  .weldVideo iframe {
+    width: 100%;
   }
   .welding-images {
-    padding-top: 20px;
+    flex-wrap: wrap;
     margin: 0 auto;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
-  .welding-images img {
-    width: 200px;
+  .weldImg {
+    margin: 0 auto;
+    width: 30%;
+    margin-top: 20px;
+  }
+  .weldImg img {
+    width: 100%;
     height: 200px;
   }
-  .welding-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
+  .weldDesc {
+    height: 200px;
   }
-  .welding-images iframe {
-    width: 85%;
+  .weldDesc p {
+    font-size: 1em;
   }
 }
 /*////////////////// Ram EDM Page ////////////////*/
@@ -1138,34 +1117,55 @@ body {
 
 .ram-images {
   position: relative;
-  display: block;
-  float: left;
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   z-index: 3;
+  justify-content: center;
 }
 
-.ram-images figure {
-  display: inline-block;
+.ramImg {
+  margin: 20px;
+  position: relative;
+  width: 18%;
 }
 
-.ram-images figure figcaption {
-  color: rgb(255, 255, 255);
-  font-family: sans-serif;
-}
-
-.ram-images img {
-  z-index: 1;
-  padding: 10px;
+.ramImg img {
+  position: relative;
   margin: 0 auto;
-  width: 330px;
-  height: 300px;
+  width: 100%;
+  height: 275px;
   border-radius: 10px;
 }
 
-.ram-images img:hover {
-  transform: scale(1.5);
-  transition: 0.75s;
-  z-index: 2;
+.ramDesc {
+  display: table;
+  height: 275px;
+  border-radius: 10px;
+  width: 100%;
+  background-color: rgba(50, 50, 50, 0.85);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.ramDesc p {
+  text-align: center;
+  font-family: sans-serif;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+}
+
+.ramImg:hover .ramDesc {
+  visibility: visible;
+  transition: 0.3s;
+  opacity: 1;
 }
 
 @media (max-width: 1100px) {
@@ -1189,55 +1189,23 @@ body {
     font-size: 13px;
   }
   .ram-images {
+    flex-wrap: wrap;
     margin: 0 auto;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
   }
-  .ram-images img {
-    width: 200px;
-    height: 200px;
-  }
-  .ram-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
-  }
-}
-@media (max-width: 1450px) {
-  .table-and-images {
+  .ramImg {
     margin: 0 auto;
-    flex-direction: column;
-    height: auto;
+    width: 30%;
+    margin-top: 20px;
   }
-  .service-tables {
-    justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+  .ramImg img {
     width: 100%;
-  }
-  .ram-table {
-    margin: 0 auto;
-    padding-bottom: 20px;
-    width: 85%;
-  }
-  .ram-table td {
-    font-size: 13px;
-  }
-  .ram-images {
-    margin: 0 auto;
-    vertical-align: middle;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  .ram-images img {
-    width: 200px;
     height: 200px;
   }
-  .ram-images img:hover {
-    position: relative;
-    transform: scale(1);
-    transition: 0.75s;
+  .ramDesc {
+    height: 200px;
+  }
+  .ramDesc p {
+    font-size: 1em;
   }
 }
 /*////////////////// Scanning Page ////////////////*/
