@@ -47,7 +47,7 @@ body {
   z-index: 100;
   text-decoration: none;
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 20px;
   font-family: sans-serif;
   padding: 15px;
   display: block;
@@ -123,7 +123,7 @@ body {
     width: 40%;
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1200px) {
   .navigation-bar {
     justify-content: center;
     flex-direction: column;
@@ -465,7 +465,6 @@ body {
   height: 250px;
   width: 80%;
 }
-// Test message
 
 .team-members h2 {
   color: rgb(255, 255, 255);
@@ -511,10 +510,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-
-.arrow, .down, .up {
-  display: none;
 }
 
 .five-axis-table {
@@ -593,18 +588,6 @@ body {
     flex-direction: column;
     width: 90%;
   }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
-  }
   .five-axis-table {
     display: inline-table;
     padding-bottom: 20px;
@@ -625,7 +608,7 @@ body {
   }
   .five-axis-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
 }
@@ -641,18 +624,6 @@ body {
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-  }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
   }
   .five-axis-table {
     margin: 0 auto;
@@ -674,7 +645,7 @@ body {
   }
   .five-axis-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
 }
@@ -721,10 +692,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-
-.arrow, .down, .up {
-  display: none;
 }
 
 .mold-table {
@@ -806,18 +773,6 @@ body {
     flex-direction: column;
     width: 90%;
   }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
-  }
   .mold-table {
     display: inline-table;
     padding-bottom: 20px;
@@ -838,7 +793,7 @@ body {
   }
   .mold-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
 }
@@ -854,18 +809,6 @@ body {
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-  }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
   }
   .mold-table {
     margin: 0 auto;
@@ -887,7 +830,7 @@ body {
   }
   .mold-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
 }
@@ -907,10 +850,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-
-.arrow, .down, .up {
-  display: none;
 }
 
 .engineering-table {
@@ -992,18 +931,6 @@ body {
     flex-direction: column;
     width: 90%;
   }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
-  }
   .mold-table {
     display: inline-table;
     padding-bottom: 20px;
@@ -1024,7 +951,7 @@ body {
   }
   .engineering-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
 }
@@ -1040,18 +967,6 @@ body {
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-  }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
   }
   .engineering-table {
     margin: 0 auto;
@@ -1073,7 +988,7 @@ body {
   }
   .engineering-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
 }
@@ -1093,10 +1008,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-
-.arrow, .down, .up {
-  display: none;
 }
 
 .welding-images {
@@ -1136,18 +1047,6 @@ body {
     flex-direction: column;
     height: auto;
   }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
-  }
   .welding-images {
     margin: 0 auto;
     vertical-align: middle;
@@ -1160,7 +1059,7 @@ body {
   }
   .welding-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
   .welding-images iframe {
@@ -1174,18 +1073,6 @@ body {
     flex-direction: column;
     height: auto;
   }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
-  }
   .welding-images {
     padding-top: 20px;
     margin: 0 auto;
@@ -1199,7 +1086,7 @@ body {
   }
   .welding-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
   .welding-images iframe {
@@ -1223,10 +1110,6 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-}
-
-.arrow, .down, .up {
-  display: none;
 }
 
 .ram-table {
@@ -1309,18 +1192,6 @@ body {
     flex-direction: column;
     width: 90%;
   }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
-  }
   .ram-table {
     display: inline-table;
     padding-bottom: 20px;
@@ -1341,7 +1212,7 @@ body {
   }
   .ram-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
 }
@@ -1357,18 +1228,6 @@ body {
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-  }
-  .arrow {
-    border: solid rgb(255, 255, 255);
-    border-width: 0 3px 3px 0;
-    display: inline-block;
-    padding: 5px;
-  }
-  .up {
-    transform: rotate(-135deg);
-  }
-  .down {
-    transform: rotate(45deg);
   }
   .ram-table {
     margin: 0 auto;
@@ -1390,7 +1249,7 @@ body {
   }
   .ram-images img:hover {
     position: relative;
-    transform: scale(2);
+    transform: scale(1);
     transition: .75s;
   }
 }
@@ -1451,7 +1310,7 @@ body {
   border-radius: 10px;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 900px) {
   .scanning-images {
     flex-direction: column;
     margin: 0 auto;
@@ -1473,12 +1332,33 @@ body {
   font-size: 30px;
 }
 
-.equipment-list {
-  margin: 0;
-  flex-direction: column;
+.equipmentBox {
+  margin: 0 auto;
+  width: 100%;
 }
 
-.equipment-list ul {
+.equipmentList {
+  margin: 0;
+  flex-direction: column;
+  width: 50%;
+  float: left;
+}
+
+.equipmentPhotos {
+  width: 50%;
+  float: left;
+}
+
+.equipmentPhotos #wide {
+  margin: 0 auto;
+  display: block;
+  height: 400px;
+  width: 75%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.equipmentList ul {
   flex-direction: column;
   color: rgb(255, 255, 255);
   font-family: sans-serif;
@@ -1487,28 +1367,50 @@ body {
   margin-bottom: 15px;
 }
 
-#list-category {
+#listCategory {
   color: rgb(220, 62, 50);
+  font-size: 30px;
+}
+
+#imageShown {
+  color: rgb(175, 175, 175);
   font-size: 25px;
 }
 
-.equipment-list li {
-  text-align: justify;
+.equipmentList li {
+  text-align: left;
   font-size: 20px;
   margin: 0 auto;
   padding: 5px;
 }
 
-@media (max-width: 1100px) {
-  .equipment-list {
+@media (max-width: 900px) {
+  .equipmentList {
     width: 100%;
   }
-  #list-category {
+  #listCategory {
     color: rgb(220, 62, 50);
     font-size: 20px;
   }
-  .equipment-list li {
-    text-align: justify;
+  #imageShown {
+    color: rgb(175, 175, 175);
+    font-size: 17px;
+  }
+  .equipmentPhotos {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .equipmentPhotos #wide {
+    margin: 0 auto;
+    display: block;
+    height: 250px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+  .equipmentList li {
+    text-align: left;
     font-size: 15px;
     margin: 0 auto;
     padding: 5px;
